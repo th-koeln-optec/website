@@ -32,7 +32,7 @@ jobs:
         run: hugo --minify
 
       - name: rsync deployments
-        uses: burnett01/rsync-deployments@4.1
+        uses: burnett01/rsync-deployments@c8300118e5f66a3fe187f35763d7e65848ae205a # 9.0.3
         with:
           switches: -avzr --delete
           path: public/
